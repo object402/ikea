@@ -26,7 +26,7 @@ footer {
   background: rgb(134, 215, 181);
   height: 80px;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 23px;
   overflow: hidden;
 }
 
@@ -37,22 +37,29 @@ footer .footer-inner {
 }
 
 footer .footer-inner .footer-left .footerlogo {
-  width: 250px;
+  width: 190px;
   height: inherit;
 }
 
 footer .footer-left {
   float: left;
 }
+
 footer .footer-left img {
   float: left;
 }
+
 footer .footer-left p {
   float: right;
+  line-height: 37px;
+  font-size: 12px;
 }
+
 footer .footer-right {
   float: right;
   margin-right: 30px;
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 footer .footer-right ul {
