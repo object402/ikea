@@ -5,6 +5,17 @@ header {
   background: #333333;
 }
 
+header .logo {
+  width: 150px;
+  height: 80px;
+  margin: auto;
+}
+
+header .logo img {
+  width: inherit;
+  height: inherit;
+}
+
 .contents {
   width: 100%;
   height: 500px;
@@ -25,10 +36,20 @@ footer .footer-inner {
   margin: auto;
 }
 
+footer .footer-inner .footer-left .footerlogo {
+  width: 250px;
+  height: inherit;
+}
+
 footer .footer-left {
   float: left;
 }
-
+footer .footer-left img {
+  float: left;
+}
+footer .footer-left p {
+  float: right;
+}
 footer .footer-right {
   float: right;
   margin-right: 30px;
