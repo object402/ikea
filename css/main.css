@@ -32,9 +32,10 @@ nav ul {
 nav ul li {
   float: left;
   width: auto;
-  margin-right: 115px;
+  margin-right: 114px;
   text-align: center;
-
+  position: relative;
+  height: 53px;
 }
 
 nav ul li:last-child {
@@ -46,12 +47,40 @@ nav ul li a {
   color: rgb(200, 200, 200);
 }
 
+.subnav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-align: left;
+  border: 1px solid rgba(150, 108, 212, 0.82);
+  box-sizing: border-box;
+}
+
+.subnav>dt {
+  font-weight: bold;
+}
+
+.subnav>dt>a {
+  color: rgb(108, 108, 108);
+}
+
+.subnav>dd {
+  font-size: 17px;
+  line-height: 36px;
+}
+
+.lastdd {
+  margin-bottom: 25px;
+}
+
+.widthcontrol {
+  width: 126px;
+}
 
 /* -------------------  header end ------------------- */
 
 .contents {
   width: 100%;
-  background: rgb(180, 180, 180);
   height: 600px;
 }
 
@@ -60,7 +89,6 @@ nav ul li a {
   display: block;
   clear: both;
 }
-
 
 /* -------------------  contents end ------------------- */
 
@@ -141,6 +169,5 @@ footer .footer-right ul li::before {
   border-right: 1px solid #00000054;
   margin: auto;
 }
-
 
 /* -------------------  footer end ------------------- */
