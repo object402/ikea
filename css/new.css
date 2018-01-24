@@ -96,8 +96,14 @@ height:30px;
 .p_goods_list li .p_goods_title{
   width:inherit;
   height:100px;
+  padding-top: 10px;
+  line-height:30px;
   background: blue;
 }
+.p_goods_list li .p_goods_title span:first-child{
+  font-weight: bold;
+}
+
 .p_goods span>img{
   display: block;
   width:230px;
