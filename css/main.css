@@ -9,6 +9,7 @@ header .logo {
   width: 150px;
   height: 80px;
   margin: auto;
+  display: block;
 }
 
 header .logo img {
@@ -131,6 +132,53 @@ section::after {
   float: right;
 }
 
+.secondblock {
+  width: 1200px;
+  height: 400px;
+  /* background: rgb(4, 224, 53); */
+  margin: auto;
+}
+
+.slidenav {
+  width: 380px;
+  height: 45px;
+  margin: auto;
+}
+
+.slidenav ul {
+  height: inherit;
+  position: relative;
+}
+
+.slidenav ul>li {
+  float: left;
+  width: 170px;
+  height: 30px;
+  text-align: center;
+  background: rgb(203, 234, 255);
+  line-height: 29px;
+  padding: 8px;
+}
+
+.slidenav ul>li>a {
+  font-size: 18px;
+}
+
+.slidenav ul>span {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: rgb(181, 181, 181);
+  position: absolute;
+  top: 13px;
+  left: 191px;
+}
+
+.stuffslide {
+  width: 1200px;
+  height: 300px;
+  background: rgb(190, 210, 140);
+}
 
 /* -------------------  contents end ------------------- */
 
