@@ -17,7 +17,9 @@ function hiddenNav() {
     })
   }
   //li 를 클릭했을때 subnav가 펼쳐지도록
-  $('.gnb>ul>li').click(function () {
-    $(this).children('dl').slideDown();
+  $('.gnb>ul>li').hover(function () {
+    $(this).children('dl').stop().slideDown(800);
+  },function () {
+      $(this).children('dl').stop().slideUp();
   });
 }
