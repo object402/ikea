@@ -1,4 +1,9 @@
 @charset "UTF-8";
+header::after{
+  clear: both;
+  content:"";
+  display: block;
+}
 header {
   width: 100%;
   height: 160px;
