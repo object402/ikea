@@ -48,6 +48,8 @@ function bestitemslide() {
 
   //현재페이지의 상태를 나타내는 변수
   var pageNum = 0;
+
+  //좌,우 버튼으로 제어할때
   $('.mainnext').click(function mainnext() {
     pageNum++;
     if (pageNum >= 1) {
@@ -61,7 +63,6 @@ function bestitemslide() {
     console.log(pageNum);
     return false;
   })
-
   $('.mainprev').click(function mainprev() {
     pageNum--;
     if (pageNum <= 0) {
@@ -76,6 +77,7 @@ function bestitemslide() {
     return false;
   })
 
+  //pagenation으로 제어할떄
   $('.main-pagenation>span:last-child').click(function() {
     $('.main-pagenation span').removeClass('pageOn');
     $(this).addClass('pageOn');
