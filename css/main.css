@@ -87,10 +87,12 @@ nav ul li a {
   width: 130px;
 }
 
+
 /* -------------------  header end ------------------- */
 
 .contents {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .contents::after {
@@ -140,9 +142,9 @@ section::after {
 .secondblock {
   margin-top: 50px;
   width: 1200px;
-  height: 400px;
+  height: 340px;
   /* background: rgb(4, 224, 53); */
-  margin: 90px auto;
+  margin: 70px auto;
   padding-top: 25px;
 }
 
@@ -238,6 +240,13 @@ section::after {
   height: 30px;
 }
 
+.mainprev2, .mainnext2 {
+  display: block;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+}
+
 .mainprev {
   float: left;
   background: url('../img/icons/prev.png');
@@ -266,6 +275,163 @@ section::after {
 span.pageOn {
   background: rgb(34, 34, 34);
 }
+
+.thirdblock {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  background: #FE6A1F;
+  z-index: 10;
+  margin-bottom: 100px;
+}
+
+.longbanner-visual {
+  display: block;
+  width: 1060px;
+  height: 170px;
+  margin: auto;
+  position: relative;
+}
+
+.longbanner-inner {
+  width: 9999px;
+  position: absolute;
+  top: -30px;
+}
+
+.longbanner-inner>img {
+  display: block;
+  left: 39px;
+  position: absolute;
+}
+
+.longbanner-inner>img:last-child {
+  display: none;
+}
+
+.thirdblock .main-contorler2 {
+  width: 956px;
+  margin: auto;
+  padding-top: 70px;
+  z-index: 100;
+  position: absolute;
+  left: 50px;
+}
+
+.main-contorler2 a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background: white;
+}
+
+.main-contorler2 a img {
+  display: block;
+  width: 30px;
+}
+
+.mainprev2 {
+  float: left;
+}
+
+.mainnext2 {
+  float: right;
+}
+
+.addedblock {
+  width: 100%;
+  height: 830px;
+  background: #F1F5F8;
+  padding-bottom: 30px;
+}
+
+.addedblock-inner {
+  width: 1200px;
+  margin: auto;
+}
+
+.addedblock-inner h2 {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 40px 0 25px 0;
+  width: 262px;
+  margin: auto;
+}
+
+.imgblock {
+  width: 1060px;
+  height: 440px;
+  margin: auto;
+}
+
+.imgblock ul li {
+  float: left;
+  width: 340px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.imgblock ul li:last-child {
+  margin-right: 0;
+}
+
+.bottomslide {
+  width: 1060px;
+  margin: auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.bottomslide ul {
+  width: 3000px;
+}
+
+.bottomslide ul li {
+  float: left;
+  cursor: pointer;
+}
+
+.bottomslide .main-contorler3 {
+  width: 1000px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.bottomslide .main-contorler3 .mainprev3 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  float: left;
+}
+
+.mainprev3>img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.bottomslide .main-contorler3 .mainnext3 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  float: right;
+}
+
+.mainnext3>img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 
 /* -------------------  contents end ------------------- */
 
@@ -346,5 +512,6 @@ footer .footer-right ul li::before {
   border-right: 1px solid #00000054;
   margin: auto;
 }
+
 
 /* -------------------  footer end ------------------- */

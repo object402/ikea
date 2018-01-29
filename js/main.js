@@ -1,6 +1,8 @@
 $(document).ready(function() {
   hiddenNav();
   bestitemslide();
+  thirdblock();
+  addedblock()
 })
 
 function hiddenNav() {
@@ -95,4 +97,42 @@ function bestitemslide() {
     }, 800)
     pageNum = 0;
   })
+}
+
+function thirdblock() {
+  var click = 0;
+  $('.mainprev2, .mainnext2').click(function() {
+    var click2 = click % 2;
+    click++;
+    console.log(click2);
+    if (click2 == 0) {
+      $('.longbanner-inner>img:first-child').stop().fadeOut(0);
+      $('.longbanner-inner>img:last-child').stop().fadeIn(800);
+    } else if (click2 == 1) {
+      $('.longbanner-inner>img:last-child').stop().fadeOut(0);
+      $('.longbanner-inner>img:first-child').stop().fadeIn(800);
+    }
+
+    return false;
+  })
+}
+
+function addedblock() {
+  var click = 0;
+  var imgWidth = $('.bottomslide>ul>li').width() * -1;
+  $('.mainprev3, .mainnext3').click(function() {
+    click++;
+    var click2 = click % 2;
+    if (click2 == 0) {
+      $('.bottomslide>ul').animate({
+        'margin-left': 0},1000)
+
+    } else if (click2 == 1) {
+      $('.bottomslide>ul').animate({
+        'margin-left': imgWidth
+      },1000)
+    }
+    return false;
+  })
+
 }
