@@ -5,22 +5,86 @@ body {
 
 /* search bar */
 
-.p_search_bar {
-  width: 500px;
-  height: 40px;
-  border: 1px solid #333;
+.p_search_bar{
+  margin:auto;
+  margin-top:30px;
+  margin-bottom:50px;
+  padding-bottom:20px;
+  width:1200px;
+  height:50px;
+  line-height: 50px;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.p_search_bar select{
+  /* margin-top:9px; */
+  float: right;
   border-radius: 3px;
+  height:30px;
+  width:200px;
+  font-size: 16px;
+}
+.p_search_bar option{
+  color:#fff;
+  background-color: #333;
+}
+/* .p_search_bar option:last-child{
+  color:#fff;
+  background-color: #333;
+} */
+
+/* banner */
+.p_new_banner {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  /* background: red; */
 }
 
-.p_search_bar select {
-  background: #333;
+.p_new_banner img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background: url(../img/new/20173_cosl01a_01_PH140980.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0px -346px;
+}
+
+.p_new_banner h2 {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
   color: #fff;
-  width: 100px;
-  height: 30px;
+  line-height: 69px;
+  border-bottom: 2px solid #fff;
+  text-shadow: 2px 3px 7px #333;
 }
 
-.p_search_bar option {
-  height: 30px;
+.p_new_banner span {
+  position: absolute;
+  width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 25px;
+  display: block;
+  color: #fff;
+  text-shadow: 2px 3px 7px #333;
+}
+
+.p_new_banner:after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 /* content  */
@@ -45,34 +109,31 @@ body {
   /* border: 1px solid #000; */
 }
 
-.p_side_nav::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
 .p_side_nav h2 {
   text-align: center;
   font-weight: bold;
   line-height: 40px;
-  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 
 .p_side_nav .p_side_nav_left ul li:first-child {
-  border-top: 1px solid #FFCD00;
+  border-top: 1px solid #9E9E9E;
 }
 
 .p_side_nav .p_side_nav_left ul li {
   width: 130px;
-  height: 40px;
-  line-height: 40px;
-  border-bottom: 1px solid #FFCD00;
-  font-size: 12px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #9E9E9E;
+  font-size: 14px;
 }
 
 .p_side_nav .p_side_nav_left ul li a {
   color: #222;
   margin-left: 12px;
+  transition: 0.3s;
 }
 
 .p_side_nav .p_side_nav_left ul li a:hover {
@@ -85,6 +146,7 @@ body {
   margin: auto;
   width: 85%;
   float: right;
+  margin-bottom: 40px;
   /* background: red; */
 }
 
@@ -105,7 +167,7 @@ body {
 .p_goods_list li .p_goods {
   width: inherit;
   height: 230px;
-  background: yellow;
+  /* background: yellow; */
 }
 
 .p_goods_list li .p_goods_title {
@@ -120,8 +182,8 @@ body {
 }
 
 .p_goods_title .p_new_item {
-  margin:auto;
-  margin-top:10px;
+  margin: auto;
+  margin-top: 10px;
   display: block;
   font-weight: bold;
   width: 50px;
@@ -143,8 +205,10 @@ body {
 }
 
 .p_goods span>img {
-  display: block;
-  width: 230px;
+  margin: auto;
+      display: block;
+      width: 200px;
+      padding-top: 10px;
 }
 
 .p_content_list::after {
@@ -158,3 +222,87 @@ body {
   content: "";
   clear: both;
 }
+
+/* p_pagination  */
+
+/* page button */
+
+.p_paging {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 400px;
+}
+
+.p_paging::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* right / left button */
+
+.p_select_left {
+  float: left;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/btn_prev.gif) no-repeat;
+  cursor: pointer;
+}
+
+.p_select_right {
+  float: right;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/btn_next.gif) no-repeat;
+  cursor: pointer;
+}
+
+/* paging  */
+
+.p_pagination {
+  display: block;
+  margin: auto;
+  width: 111px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.p_pagination li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  /* background: #ff552e; */
+  color: #666;
+}
+
+.p_pagination li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  /* background: #ff552e; */
+  color: #666;
+}
+
+.p_pagination li a.active {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #666;
+  /* background: #fad606; */
+  color: #fff;
+  transition: 0.3s;
+}
+
+.p_pagination li:first-child {
+  margin-left: 5px;
+}
+
+.p_pagination li:last-child {
+  margin-right: 0;
+}
+
+/* ========================== */
