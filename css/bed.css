@@ -6,11 +6,61 @@
 }
 .j_contentsAllWrapper{
    font-family: '맑은 고딕','Malgun Gothic';
-   max-width: 1200px;
+   /* max-width: 1200px; */
    width: 100%;
    margin: 0 auto;
 }
-.j_direction{
+.j_bedBanner{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   background-image: url(../img/bed/mainBed.jpg);
+}
+.j_bedBanner .j_title{
+   text-align: center;
+   font-size: 32px;
+   font-weight: 700;
+   color: #2e2f33;
+   /* margin: 50px 0 10px 0; */
+}
+.j_bedBanner .j_title h2{
+   position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   display: inline-block;
+   font-size: 40px;
+   font-weight: bold;
+   color: #fff;
+   line-height: 69px;
+   border-bottom: 2px solid #fff;
+   text-shadow: 2px 3px 7px #333;
+}
+.j_bedBanner .j_description{
+   /* margin: 2%;
+   font-size: 14px;
+   line-height: 21px;
+   margin-top: 50px; */
+
+   position: absolute;
+   width: 1200px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   line-height: 25px;
+   display: block;
+   color: #fff;
+   text-shadow: 2px 3px 7px #333;
+}
+.j_underBanner{
+}
+.j_underBanner .j_direction{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
    width: 100%;
    height: 30px;
    line-height: 30px;
@@ -19,45 +69,34 @@
    font-family: "Malgun Gothic";
    font-size: 12px;
 }
-.j_direction>span{
+.j_underBanner .j_direction>span{
 
 }
-.j_direction>span:first-child a,
-.j_direction>span:nth-child(3) a{
+.j_underBanner .j_direction>span:first-child a,
+.j_underBanner .j_direction>span:nth-child(3) a{
    color: #979899;
    font-weight: 700;
-   }
-.j_direction>span:last-child a{
+}
+.j_underBanner .j_direction>span:last-child a{
    color: #6C6D6E;
    font-weight:700;
 }
-.j_title{
-   text-align: center;
-   font-size: 32px;
-   font-weight: 700;
-   color: #2e2f33;
-   margin: 50px 0 10px 0;
-}
-.j_contentsWrapper select{
+.j_underBanner select{
    float: right;
-   margin-right: 20px;
+   margin-top: 5px;
 }
-.j_contentsWrapper select:after{
+.j_underBanner select:after{
    content: "";
    display: block;
    clear: both;
 }
-.j_description{
-   margin: 2%;
-   font-size: 14px;
-   line-height: 21px;
-   margin-top: 50px;
-}
+
 .j_bedList{
    width: 100%;
 }
 .j_bedList ul{
-   width: 1200px;
+   width: 100%;
+   max-width: 1200px;
    height: auto;
    /* background: rgba(121, 121, 121, 0.04); */
    margin: 30px auto;
