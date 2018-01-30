@@ -14,7 +14,8 @@
    position: relative;
    width: 100%;
    height: 250px;
-   background-image: url(../img/bed/mainBed.jpg);
+   background: url(../img/bed/mainBed.jpg) 0px -366px;
+   background-size: cover;
 }
 .j_bedBanner .j_title{
    text-align: center;
@@ -62,8 +63,8 @@
    max-width: 1200px;
    margin: 0 auto;
    width: 100%;
-   height: 30px;
-   line-height: 30px;
+   height: 63px;
+   line-height: 63px;
    text-indent: 10px;
    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
    font-family: "Malgun Gothic";
@@ -72,18 +73,23 @@
 .j_underBanner .j_direction>span{
 
 }
-.j_underBanner .j_direction>span:first-child a,
+.j_underBanner .j_direction>span:nth-child(1) a,
 .j_underBanner .j_direction>span:nth-child(3) a{
    color: #979899;
    font-weight: 700;
 }
-.j_underBanner .j_direction>span:last-child a{
+.j_underBanner .j_direction>span:nth-child(2) a,
+.j_underBanner .j_direction>span:nth-child(4) a{
+   color: #979899;
+}
+.j_underBanner .j_direction>span:nth-child(5) a{
    color: #6C6D6E;
    font-weight:700;
 }
 .j_underBanner select{
    float: right;
-   margin-top: 5px;
+   margin-top: 22.5px;
+   margin-right: 5px;
 }
 .j_underBanner select:after{
    content: "";
@@ -178,4 +184,85 @@
 
 option {
    height: 100px !important;
+}
+/* p_pagination  */
+
+/* page button */
+
+.j_paging {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 400px;
+}
+
+.j_paging::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* right / left button */
+
+.j_select_left {
+  float: left;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/btn_prev.gif) no-repeat;
+  cursor: pointer;
+}
+
+.j_select_right {
+  float: right;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/icons/btn_next.gif) no-repeat;
+  cursor: pointer;
+}
+
+/* paging  */
+
+.j_pagination {
+  display: block;
+  margin: auto;
+  width: 111px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.j_pagination li {
+  display: block;
+  float: left;
+  margin-left: 36px;
+  width: 32px;
+  height: 32px;
+  /* background: #ff552e; */
+  color: #666;
+}
+
+.j_pagination li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  /* background: #ff552e; */
+  color: #666;
+}
+
+.j_pagination li a.active {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #666;
+  /* background: #fad606; */
+  color: #fff;
+  transition: 0.3s;
+}
+
+.j_pagination li:first-child {
+  /* margin-left: 5px; */
+}
+
+.j_pagination li:last-child {
+  /* margin-right: 0; */
 }
