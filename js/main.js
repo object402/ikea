@@ -13,10 +13,10 @@ function hiddenNav() {
   for (var i = 0; i < listLength; i++) {
     //li>a 의 width를 담는 변수
     var aWidth = $('.gnb>ul>li>a').eq(i).width();
-    var liWidth = $('.gnb>ul>li').eq(i + 1).width();
+    var liWidth = $('.gnb>ul>li').eq(i + 1).width()+1;
     //aWidth를 반올림하기위해 +1한 값을 width에
     $('.gnb>ul>li').eq(i).css({
-      'width': aWidth + 1
+      'width': aWidth + 2
     })
     $('.subnav').eq(i).css({
       'width': liWidth
