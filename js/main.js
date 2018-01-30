@@ -7,23 +7,32 @@ $(document).ready(function() {
 
 function hiddenNav() {
   //subnav 숨기기
-  $('.gnb>ul>li>dl').hide();
+  $('.subnav-wrapper').hide();
   //list의 사이즈 담는 변수
   var listLength = $('.gnb>ul>li').length;
   for (var i = 0; i < listLength; i++) {
     //li>a 의 width를 담는 변수
     var aWidth = $('.gnb>ul>li>a').eq(i).width();
+    var liWidth = $('.gnb>ul>li').eq(i + 1).width();
     //aWidth를 반올림하기위해 +1한 값을 width에
     $('.gnb>ul>li').eq(i).css({
       'width': aWidth + 1
     })
+    $('.subnav').eq(i).css({
+      'width': liWidth
+    })
   }
-  //li 를 클릭했을때 subnav가 펼쳐지도록
-  $('.gnb>ul>li').hover(function() {
-    $(this).children('dl').stop().slideDown(800);
-  }, function() {
-    $(this).children('dl').stop().slideUp();
-  });
+  //li 를 mouseenter했을때 subnav가 펼쳐지도록
+  $('.gnb>ul>li').mouseenter(function() {
+    $('.subnav-wrapper').stop().slideDown(500);
+  })
+  $('.subnav-wrapper').mouseleave(function() {
+    $('.subnav-wrapper').stop().slideUp(500);
+  })
+  $('.btn-close').click(function() {
+    $('.subnav-wrapper').stop().slideUp(500);
+  })
+
 }
 
 function bestitemslide() {
@@ -125,12 +134,13 @@ function addedblock() {
     var click2 = click % 2;
     if (click2 == 0) {
       $('.bottomslide>ul').animate({
-        'margin-left': 0},1000)
+        'margin-left': 0
+      }, 1000)
 
     } else if (click2 == 1) {
       $('.bottomslide>ul').animate({
         'margin-left': imgWidth
-      },1000)
+      }, 1000)
     }
     return false;
   })
