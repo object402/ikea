@@ -9,6 +9,7 @@ header {
   width: 100%;
   height: 160px;
   background: #333333;
+  position: relative;
 }
 
 header .logo {
@@ -47,6 +48,7 @@ nav ul li {
 
 nav ul li:last-child {
   margin-right: 0;
+  float: right;
 }
 
 nav ul li a {
@@ -54,29 +56,86 @@ nav ul li a {
   color: rgb(200, 200, 200);
 }
 
-.subnav {
+.subnav-wrapper {
+  width: 100%;
+  height: 400px;
+  background: rgba(223, 223, 223, 0.95);
   position: absolute;
-  top: 50px;
-  left: 0;
+  top: 160px;
+  padding: 20px 0;
+  box-shadow: -1px 2px 20px rgb(69, 69, 69);
+}
+
+.subnav {
+  float: left;
   text-align: left;
   box-sizing: border-box;
-  background: #333333;
-  width: 150px;
-  text-indent: 3px;
-  padding: 0 0 10px 0;
+  margin-right: 115px;
+}
+
+.lastdl {
+  float: right;
+  margin-right: 0;
+}
+
+.subnav:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.subnav:first-child {
+  margin-left: 157px;
+}
+
+.gnb>ul::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.subnav-inner {
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  z-index: 99;
+  top: 5px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/close.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .subnav>dt {
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 4px;
 }
 
 .subnav>dt>a {
-  color: rgb(108, 108, 108);
+  color: #989898;
+  font-size: 19px;
+  line-height: 30px;
 }
 
-.subnav>dd {
+.subnav dd {
   font-size: 17px;
-  line-height: 36px;
+  line-height: 30px;
+  text-align: left;
+}
+
+dl.lineH>dd {
+  line-height: 39px;
+}
+
+.subnav dd a {
+  color: black;
 }
 
 .lastdd {
@@ -84,7 +143,7 @@ nav ul li a {
 }
 
 .widthcontrol {
-  width: 130px;
+  width: 150px;
 }
 
 
@@ -456,32 +515,62 @@ span.pageOn {
 .lastblock {
   width: 100%;
 }
+
 .photowrapper {
   width: 1200px;
   margin: auto;
 }
+
 .photowrapper ul {
   width: 1200px;
   height: 300px;
 }
+
+.photowrapper ul li:first-child {
+  background: url('../img/main/div1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photowrapper ul li:nth-child(2) {
+  background: url('../img/main/div2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photowrapper ul li:nth-child(4) {
+  background: url('../img/main/div3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photowrapper ul li:last-child {
+  background: url('../img/main/div4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .photowrapper ul li {
   width: 200px;
   height: 200px;
-  background: rgb(109, 154, 114);
   float: left;
 }
+
 .centertext {
   width: 400px !important;
-  background: rgb(113, 88, 131) !important;
   border: 3px black solid;
   box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
 }
 
 
 /* -------------------  contents end ------------------- */
 
 footer {
-  background: rgb(134, 215, 181);
+  background: rgb(226, 226, 226);
   height: 80px;
   box-sizing: border-box;
   padding-top: 23px;
@@ -489,7 +578,6 @@ footer {
 
 footer .footer-inner {
   width: 1200px;
-  height: inherit;
   margin: auto;
 }
 
