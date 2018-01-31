@@ -57,4 +57,11 @@ $(document).ready(function(){
     })
 
 
+    // html 로드
+/* id 지정을 통해서도 가능합니다.
+$("#header").load("header.html #navbar")
+*/
+
+
+
 })
