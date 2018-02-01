@@ -49,6 +49,7 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
   float: right;
+  width: 70px !important;
 }
 
 nav ul li a {
@@ -77,6 +78,7 @@ nav ul li a {
 .lastdl {
   float: right;
   margin-right: 0;
+  width: 67px !important;
 }
 
 .subnav:last-child {
