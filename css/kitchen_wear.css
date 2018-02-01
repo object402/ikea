@@ -11,12 +11,12 @@
    margin: 0 auto;
 }
 .j_bedBanner{
-   position: relative;
-   z-index: -1;
-   width: 100%;
-   height: 250px;
-   background: url(../img/bed/mainBed.jpg) 0px -366px;
-   background-size: cover;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 250px;
+  background: url(../img/kitchen/bg.jpg) 0px -413px;
+  background-size: cover;
 }
 .j_bedBanner .j_title{
    text-align: center;
