@@ -15,7 +15,7 @@
    z-index:-1;
    width: 100%;
    height: 250px;
-   background: url(../img/bed/mainBed.jpg) 0px -366px;
+     background: url(../img/lighting/bg.jpg) 0px -413px;
    background-size: cover;
 }
 .j_bedBanner .j_title{

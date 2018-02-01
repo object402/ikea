@@ -33,17 +33,21 @@ body {
 
 }
 .p_search_left span{
+  font-size: 12px;
   display: inline-block;
   margin-top:3px;
   margin-left:20px;
   width:200px;
   height:30px;
-  color:#969595;
+  color: #979899;
+  font-weight: 700;
 }
 .p_search_left span>p{
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 12px;
   display: inline-block;
-  color:#333333;
+  color: #979899;
+  font-weight: 700;
 }
 
 
