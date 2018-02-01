@@ -118,12 +118,19 @@
    margin: 0 20px;
    text-align: center;
 }
+/* list img 사이즈 조정 */
+
+
 .j_bedList ul li a{
    width: 100%;
    height: auto;
    display: block;
    /* border: 1px dashed yellow; */
    margin: 5px;
+}
+.j_bedList ul li div>img{
+  display: block;
+  width:250px;
 }
 .newImg {
    position: absolute;

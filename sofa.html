@@ -8,70 +8,76 @@
    <link rel="stylesheet" href="css/sofa.css">
    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
    <script type="text/javascript" src="js/sofa.js"></script>
    <title>IKEA main</title>
 </head>
 
 <body>
    <header>
-      <h1 class="logo"><img src="img/logo/logo.png" alt=""></h1>
-      <nav class="gnb">
-         <ul>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Beds · Mattresses</a>
-               <dl class="subnav">
-                  <dt><a href="#">Beds</a></dt>
-                  <dd><a href="#">Single</a></dd>
-                  <dd><a href="#">Loft</a></dd>
-                  <dd class="lastdd"><a href="#">Sofa</a></dd>
-                  <dt><a href="#">Mattresses</a></dt>
-                  <dd><a href="#">Foam</a></dd>
-                  <dd><a href="#">Latex</a></dd>
-                  <dd><a href="#">Spring</a></dd>
-               </dl>
-            </li>
-            <li><a href="#">Chairs · Desks  · Sofas</a>
-               <dl class="subnav">
-                  <dt><a href="#">Chairs</a></dt>
-                  <dd><a href="#">Dining</a></dd>
-                  <dd><a href="#">Bar</a></dd>
-                  <dd class="lastdd"><a href="#">Office</a></dd>
-                  <dt><a href="#">Desks</a></dt>
-                  <dd><a href="#">Bar</a></dd>
-                  <dd><a href="#">Work</a></dd>
-                  <dd class="lastdd"><a href="#">Combination</a></dd>
-                  <dt><a href="#">Sofas</a></dt>
-                  <dd><a href="#">Fabric</a></dd>
-                  <dd><a href="#">Leather</a></dd>
-               </dl>
-            </li>
-            <li><a href="#">Storage</a>
-               <dl class="subnav">
-                  <dd><a href="#">Closet</a></dd>
-                  <dd><a href="#">Bookcase</a></dd>
-                  <dd><a href="#">Cabinet</a></dd>
-                  <dd><a href="#">Drawers</a></dd>
-                  <dd><a href="#">Bathroom Storage</a></dd>
-               </dl>
-            </li>
-            <li><a href="#">Kitchen wear</a>
-               <dl class="subnav">
-                  <dd><a href="#">Cook Wear</a></dd>
-                  <dd><a href="#">Table Wear</a></dd>
-                  <dd class="widthcontrol"><a href="#">Kitchen Funiture</a></dd>
-               </dl>
-            </li>
-            <li><a href="#">Lighting</a>
-               <dl class="subnav">
-                  <dd><a href="#">Floor</a></dd>
-                  <dd><a href="#">Ceiling</a></dd>
-                  <dd><a href="#">Wall</a></dd>
-                  <dd><a href="#">Table</a></dd>
-               </dl>
-            </li>
-         </ul>
-      </nav>
+     <h1><a href="#" class="logo"><img src="img/logo/logo.png" alt=""></a></h1>
+     <nav class="gnb">
+      <ul>
+         <li><a href="#">New</a></li>
+         <li><a href="#">Beds · Mattresses</a></li>
+         <li><a href="#">Chairs · Desks  · Sofas</a></li>
+         <li><a href="#">Storage</a></li>
+         <li><a href="#">Kitchen wear</a></li>
+         <li><a href="#">Lighting</a></li>
+      </ul>
+     </nav>
+
    </header>
+
+   <div class="subnav-wrapper">
+     <div class="subnav-inner">
+
+      <dl class="subnav">
+         <dt><a href="#">Beds</a></dt>
+         <dd><a href="#">Single</a></dd>
+         <dd><a href="#">Loft</a></dd>
+         <dd class="lastdd"><a href="#">Sofa</a></dd>
+         <dt><a href="#">Mattresses</a></dt>
+         <dd><a href="#">Foam</a></dd>
+         <dd><a href="#">Latex</a></dd>
+         <dd><a href="#">Spring</a></dd>
+      </dl>
+      <dl class="subnav">
+         <dt><a href="#">Chairs</a></dt>
+         <dd><a href="#">Dining</a></dd>
+         <dd><a href="#">Bar</a></dd>
+         <dd class="lastdd"><a href="#">Office</a></dd>
+         <dt><a href="#">Desks</a></dt>
+         <dd><a href="#">Bar</a></dd>
+         <dd><a href="#">Work</a></dd>
+         <dd class="lastdd"><a href="#">Combination</a></dd>
+         <dt><a href="#">Sofas</a></dt>
+         <dd><a href="#">Fabric</a></dd>
+         <dd><a href="#">Leather</a></dd>
+      </dl>
+      <dl class="subnav lineH">
+         <dd><a href="#">Closet</a></dd>
+         <dd><a href="#">Bookcase</a></dd>
+         <dd><a href="#">Cabinet</a></dd>
+         <dd><a href="#">Drawers</a></dd>
+         <dd class="widthcontrol"><a href="#">Bathroom Storage</a></dd>
+      </dl>
+      <dl class="subnav lineH">
+         <dd><a href="#">Cook Wear</a></dd>
+         <dd><a href="#">Table Wear</a></dd>
+         <dd class="widthcontrol"><a href="#">Kitchen Funiture</a></dd>
+      </dl>
+      <dl class="subnav lineH lastdl">
+         <dd><a href="#">Floor</a></dd>
+         <dd><a href="#">Ceiling</a></dd>
+         <dd><a href="#">Wall</a></dd>
+         <dd><a href="#">Table</a></dd>
+      </dl>
+      <div class="btn-close">
+         <span></span>
+      </div>
+     </div>
+   </div>
 
    <div class="j_contentsAllWrapper">
       <div class="j_sofaBanner">
@@ -105,7 +111,6 @@
             <li>
                <a href="#">
                   <div>
-                     <span class="saleImg">sale</span>
                      <img src="img/sofa/10.JPG" alt="">
                   </div>
                   <div>
@@ -118,7 +123,6 @@
             <li>
                <a href="#">
                   <div>
-                     <span class="saleImg">sale</span>
                      <img src="img/sofa/20.JPG" alt="">
                   </div>
                   <div>
@@ -151,7 +155,6 @@
             <li>
                <a href="#">
                   <div>
-                     <span class="newImg">new</span>
                      <img src="img/sofa/50.JPG" alt="">
                   </div>
                   <div>
@@ -214,7 +217,6 @@
             <li>
                <a href="#">
                   <div>
-                     <span class="newImg">new</span>
                      <img src="img/sofa/110.JPG" alt="">
                   </div>
                   <div>

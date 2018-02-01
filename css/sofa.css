@@ -126,34 +126,7 @@
    /* border: 1px dashed yellow; */
    margin: 5px;
 }
-.newImg {
-   position: absolute;
-   margin: 30px;
-   background-color: #CA5008;
-   font-size: 11px;
-   color: #fff;
-   height: 16px;
-   width: auto;
-   border-radius: 12px;
-   padding: 2px 10px;
-   font-weight: bold;
-   line-height: 13px;
-   text-align: center;
-}
-.saleImg {
-   position: absolute;
-   margin: 30px;
-   background-color: #1661C6;
-   font-size: 11px;
-   color: #fff;
-   height: 16px;
-   width: auto;
-   border-radius: 12px;
-   padding: 2px 10px;
-   font-weight: bold;
-   line-height: 13px;
-   text-align: center;
-}
+
 .j_sofaList ul li a div:last-child p{
    color: #111;
 }

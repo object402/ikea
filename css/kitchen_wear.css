@@ -110,12 +110,14 @@
    /* text-align: center; */
    box-sizing: border-box;
    overflow: hidden;
+
 }
 
 .j_bedList ul li{
    /* display: inline-block; */
    float:left;
    margin: 0 20px;
+   text-align: center;
 }
 .j_bedList ul li a{
    width: 100%;
