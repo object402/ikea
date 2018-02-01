@@ -2,10 +2,10 @@ $(document).ready(function() {
    //list img mouseover/mouseleave
    $('.j_bedList ul li').on('mouseover',function(){
       var index = $(this).index()+1;
-      $(this).find('img').fadeTo('slow').css({'width':250}).attr('src','img/bed/'+index+'1.JPG');
+      $(this).find('img').fadeTo('slow').css({'width':250}).attr('src','img/kitchen/'+index+'1.JPG');
    }).on('mouseleave',function(){
       var index = $(this).index()+1;
-      $(this).find('img').css({'width':250}).attr('src','img/bed/'+index+'0.JPG');
+      $(this).find('img').css({'width':250}).attr('src','img/kitchen/'+index+'0.JPG');
    })
 
    //  pagination start
