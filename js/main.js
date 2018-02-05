@@ -21,6 +21,7 @@ function hiddenNav() {
     $('.subnav').eq(i).css({
       'width': liWidth
     })
+    console.log(liWidth = $('.gnb>ul>li').eq(3).width() + 1);
   }
   //li 를 mouseenter했을때 subnav가 펼쳐지도록
   $('.gnb>ul>li').mouseenter(function() {

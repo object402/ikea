@@ -75,11 +75,16 @@ nav ul li a {
   box-sizing: border-box;
   margin-right: 115px;
 }
-
 .lastdl {
-  float: right;
+  margin-right: -10px;
+}
+.lastdl::after {
+  /* float: left;
   margin-right: 0;
-  width: 67px !important;
+  width: 67px !important; */
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .subnav:last-child {
@@ -406,7 +411,7 @@ span.pageOn {
 .addedblock {
   width: 100%;
   height: 830px;
-  background: #edeff0;
+  background: linear-gradient(white,white,white, rgb(214, 214, 214));
   padding-bottom: 30px;
 }
 
