@@ -76,7 +76,7 @@ nav ul li a {
   margin-right: 115px;
 }
 .lastdl {
-  margin-right: -10px;
+  margin-right: 0px !important;
 }
 .lastdl::after {
   /* float: left;
