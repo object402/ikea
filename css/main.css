@@ -185,6 +185,10 @@ section::after {
   margin-bottom: 50px;
 }
 
+.img30 > img {
+  cursor: pointer;
+}
+
 .bigIMG {
   width: 592px;
   display: block;
@@ -393,7 +397,6 @@ span.pageOn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: solid 1px black;
   background: white;
 }
 
@@ -543,26 +546,14 @@ span.pageOn {
   background-size: cover;
 }
 
-.photowrapper ul li:nth-child(2) {
+.photowrapper ul li:last-child {
   background: url('../img/main/div2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.photowrapper ul li:nth-child(4) {
-  background: url('../img/main/div3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.photowrapper ul li:last-child {
-  background: url('../img/main/div4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .photowrapper ul li {
-  width: 200px;
+  width: 400px;
   height: 200px;
   float: left;
 }
