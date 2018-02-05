@@ -35,11 +35,15 @@ function hiddenNav() {
   })
   //Cabinet 152.992 151.586
   var firstdlW = $('.subnav-inner > dl:first-child').width();
-  console.log('dlW',firstdlW);
-  if (firstdlW>152) {
-    $('.subnav').css({'margin-right':112})
-  } else if (firstdlW<152) {
-      $('.subnav').css({'margin-right':114})
+  console.log('dlW', firstdlW);
+  if (firstdlW > 152) {
+    $('.subnav').css({
+      'margin-right': 112
+    })
+  } else if (firstdlW < 152) {
+    $('.subnav').css({
+      'margin-right': 114
+    })
   }
 
 }
