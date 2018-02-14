@@ -22,6 +22,7 @@ $(document).ready(function(){
     })
 
     //  pagination start
+    //  pagination start
 
     $('.p_pagination li:first-child a').addClass('active');
 
