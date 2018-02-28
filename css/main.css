@@ -56,6 +56,12 @@ nav ul li:last-child {
 nav ul li a {
   text-align: center;
   color: rgb(200, 200, 200);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  color:#fff;
 }
 
 .subnav-wrapper {
@@ -147,6 +153,12 @@ dl.lineH>dd {
 
 .subnav dd a {
   color: black;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.subnav dd a:hover{
+  color: #858585;
 }
 
 .lastdd {
