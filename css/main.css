@@ -185,10 +185,17 @@ section::after {
   margin-bottom: 50px;
 }
 
-.img30 > img {
-  cursor: pointer;
+.img30 > div{
+   cursor: pointer;
+   overflow: hidden;
 }
-
+.img30 > div > img{
+   width:390px;
+}
+.img30 > div:hover img{
+   opacity: 0.8;
+   transform: scale(1.1)
+}
 .bigIMG {
   width: 592px;
   display: block;
@@ -202,6 +209,7 @@ section::after {
 
 .smallIMG {
   width: 390px;
+   height: 390px;
   display: block;
   float: left;
   margin-right: 15px;
