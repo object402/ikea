@@ -126,7 +126,7 @@ body {
 .p_new_page {
   display: block;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
   height: auto;
   /* border: 1px solid #000; */
   box-sizing: border-box;
@@ -186,12 +186,15 @@ color: #222;
   margin-bottom: 40px;
   /* background: red; */
 }
+.p_goods_list{
+  text-align: center;
+}
 
 .p_goods_list li {
-  display: block;
+  display: inline-block;
   width: 230px;
   height: 100%;
-  float: left;
+  /* float: left; */
   margin-left: 20px;
   margin-top: 10px;
 }
@@ -343,3 +346,19 @@ color: #222;
 }
 
 /* ========================== */
+
+@media screen and (max-width:768px) {
+  header{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+  .p_new_banner span{
+    display: none;
+  }
+  .p_search_bar{
+    width:100%;
+  }
+
+}
