@@ -4,7 +4,7 @@ $(document).ready(function(){
 
       var img_index = $(this).index()+1;
       console.log(img_index);
-      $(this).find('img').attr({"src":"img/new/"+img_index+"1.jpg"});
+      $(this).find('img').attr({"src":"img/new2/"+img_index+"1.jpg"});
       // $(this).find('img').stop().animate({
       //   'width':'240px'
       // },'slow');
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
       var img_index = $(this).index()+1;
       console.log(img_index);
-      $(this).find('img').attr({"src":"img/new/"+img_index+"0.jpg"});
+      $(this).find('img').attr({"src":"img/new2/"+img_index+"0.jpg"});
       // $(this).find('img').stop().animate({
       //   'width':'230px'
       // },'slow');
