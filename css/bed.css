@@ -259,6 +259,12 @@ option {
       background: url(../img/bed/mainBed_newSize_768.jpg);
       background-size: cover;
    }
+   .j_bedBanner .j_title h2{
+      top: 36%;
+   }
+   .j_bedBanner .j_description{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 480px) {
