@@ -4,7 +4,9 @@ header::after {
   content: "";
   display: block;
 }
-
+.mnb {
+  display: none;
+}
 header {
   width: 100%;
   height: 190px;
@@ -44,7 +46,7 @@ nav ul li {
   margin-right: 114px;
   text-align: center;
   position: relative;
-  height: 50px;
+  /* height: 50px; */
 }
 
 nav ul li:last-child {
@@ -60,8 +62,9 @@ nav ul li a {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
+
 nav ul li a:hover {
-  color:#fff;
+  color: #fff;
 }
 
 .subnav-wrapper {
@@ -157,7 +160,8 @@ dl.lineH>dd {
   -o-transition: 0.1s;
   transition: 0.1s;
 }
-.subnav dd a:hover{
+
+.subnav dd a:hover {
   color: #858585;
 }
 
@@ -168,7 +172,6 @@ dl.lineH>dd {
 .widthcontrol {
   width: 150px;
 }
-
 
 /* -------------------  header end ------------------- */
 
@@ -197,6 +200,7 @@ section::after {
   margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
 /* 지영 */
 .firstblock{
 
@@ -231,15 +235,23 @@ section::after {
 /* .img30 > div{
    cursor: pointer;
    overflow: hidden;
+=======
+.img30>div {
+  cursor: pointer;
+  overflow: hidden;
+>>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
 }
-.img30 > div > img{
-   width:390px;
+
+.img30>div>img {
+  width: 390px;
 }
-.img30 > div:hover img{
-   opacity: 0.8;
-   transform: scale(1.1);
-   transition: all .2s ease-in-out;
+
+.img30>div:hover img {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
 }
+
 .bigIMG {
   width: 592px;
   display: block;
@@ -253,7 +265,7 @@ section::after {
 
 .smallIMG {
   width: 390px;
-   height: 390px;
+  height: 390px;
   display: block;
   float: left;
   margin-right: 15px;
@@ -633,7 +645,6 @@ span.pageOn {
   font-size: 18px;
 }
 
-
 /* -------------------  contents end ------------------- */
 
 footer {
@@ -712,6 +723,7 @@ footer .footer-right ul li::before {
   border-right: 1px solid #00000054;
   margin: auto;
 }
+<<<<<<< HEAD
 .m_none{
   display: none;
 }
@@ -866,5 +878,82 @@ width: 44%;
    .firstblock .img30 .smallIMG img{
       width: 225px;
    }
+=======
+
+/* -------------------  footer end ------------------- */
+
+@media screen and (max-width:768px) {
+  body {
+    transition: .5s;
+  }
+  .subnav-wrapper {
+    display: none;
+  }
+  .gnb {
+    display: none;
+  }
+  header {
+    height: 90px;
+    position: relative;
+  }
+  header h1 {
+    display: block;
+    width: 200px;
+    height: 90px;
+    margin: auto;
+  }
+  a.mnb_btn {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    left: 10px;
+    top: 15px;
+    background-image: url('../img/main/hamburger.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a.mnb_btn>span {
+    display: block;
+    width: inherit;
+    height: inherit;
+  }
+  .hamburger {
+    width: 60px;
+    height: 60px;
+  }
+  .mnb {
+    display: none;
+    margin: 0;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    background: rgb(172, 172, 172);
+    transition: .5s;
+  }
+  .menuOn {
+    left: -300px;
+    display: block;
+    transition: .5s;
+  }
+  .menuOn2 {
+    margin-left: 300px;
+    transition: .5s;
+  }
+  .mnb ul li {
+    float: none;
+    margin: 0;
+  }
+  .mnb ul li:last-child {
+    float: none;
+    margin: auto;
+  }
+  a.logo {
+    padding-top: 0;
+  }
+>>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
 
 }

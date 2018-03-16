@@ -14,7 +14,7 @@
    position: relative;
    width: 100%;
    height: 250px;
-   background: url(../img/sofa/sofaBanner.jpg) 0px -413px;
+   background: url(../img/sofa/sofaBanner.jpg);
    background-size: cover;
 }
 .j_sofaBanner .j_title{
@@ -22,7 +22,6 @@
    font-size: 32px;
    font-weight: 700;
    color: #2e2f33;
-   /* margin: 50px 0 10px 0; */
 }
 .j_sofaBanner .j_title h2{
    position: absolute;
@@ -38,13 +37,8 @@
    text-shadow: 2px 3px 7px #333;
 }
 .j_sofaBanner .j_description{
-   /* margin: 2%;
-   font-size: 14px;
-   line-height: 21px;
-   margin-top: 50px; */
-
    position: absolute;
-   width: 1200px;
+   width: 90%;
    margin-top: 50px;
    margin-bottom: 50px;
    top: 45%;
@@ -106,24 +100,22 @@
    width: 100%;
    max-width: 1200px;
    height: auto;
-   /* background: rgba(121, 121, 121, 0.04); */
    margin: 30px auto;
-   /* text-align: center; */
+   text-align: center;
    box-sizing: border-box;
    overflow: hidden;
 }
 
 .j_sofaList ul li{
-   /* display: inline-block; */
-   float:left;
-   margin: 0 20px;
+   display: inline-block;
+   /* float:left; */
+   margin: 0 15px;
    text-align: center;
 }
 .j_sofaList ul li a{
    width: 100%;
    height: auto;
    display: block;
-   /* border: 1px dashed yellow; */
    margin: 5px;
 }
 
@@ -235,10 +227,15 @@ option {
   transition: 0.3s;
 }
 
-.j_pagination li:first-child {
-  /* margin-left: 5px; */
+@media screen and (max-width: 768px) {
+   .j_sofaBanner{
+      background: url(../img/sofa/sofaBanner_768.jpg);
+      background-size: cover;
+   }
 }
 
-.j_pagination li:last-child {
-  /* margin-right: 0; */
+@media screen and (max-width: 480px) {
+   .j_sofaBanner{
+      display: none;
+   }
 }

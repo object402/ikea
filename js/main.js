@@ -3,49 +3,88 @@ $(document).ready(function() {
   bestitemslide();
   thirdblock();
   addedblock()
+  mnb();
 })
 
-function hiddenNav() {
-  //subnav 숨기기
-  $('.subnav-wrapper').hide();
-  //list의 사이즈 담는 변수
-  var listLength = $('.gnb>ul>li').length;
-  for (var i = 0; i < listLength; i++) {
-    //li>a 의 width를 담는 변수
-    var aWidth = $('.gnb>ul>li>a').eq(i).width();
-    var liWidth = $('.gnb>ul>li').eq(i + 1).width() + 1;
-    //aWidth를 반올림하기위해 +1한 값을 width에
-    $('.gnb>ul>li').eq(i).css({
-      'width': aWidth + 2
-    })
-    $('.subnav').eq(i).css({
-      'width': liWidth
-    })
-    console.log(liWidth = $('.gnb>ul>li').eq(3).width() + 1);
-  }
-  //li 를 mouseenter했을때 subnav가 펼쳐지도록
-  $('.gnb>ul>li').mouseenter(function() {
-    $('.subnav-wrapper').stop().slideDown(500);
-  })
-  $('.subnav-wrapper').mouseleave(function() {
-    $('.subnav-wrapper').stop().slideUp(500);
-  })
-  $('.btn-close').click(function() {
-    $('.subnav-wrapper').stop().slideUp(500);
-  })
-  //Cabinet 152.992 151.586
-  var firstdlW = $('.subnav-inner > dl:first-child').width();
-  console.log('dlW', firstdlW);
-  if (firstdlW > 152) {
-    $('.subnav').css({
-      'margin-right': 112
-    })
-  } else if (firstdlW < 152) {
-    $('.subnav').css({
-      'margin-right': 114
-    })
-  }
+$(window).resize(function() {
+  hiddenNav();
+})
 
+function mnb() {
+  var bodyH = $('body').height();
+  $('.mnb').css({
+    'height': bodyH
+  });
+  console.log('전체높이:', bodyH);
+
+  $('.mnb_btn').click(function() {
+    $('.mnb').toggleClass('menuOn');
+    $('body').toggleClass('menuOn2');
+
+    if($('body').hasClass('menuOn2')){
+      $('.mnb_btn').css({
+        'background-image':'url(../ikea/img/main/X.png)'
+      })
+    } else {
+      $('.mnb_btn').css({
+        'background-image':'url(../ikea/img/main/hamburger.png)'
+      })
+    }
+
+  })
+
+}
+
+function hiddenNav() {
+  var bodyW = $('body').width();
+  console.log(bodyW);
+  if (bodyW > 768) {
+    //subnav 숨기기
+    $('.subnav-wrapper').hide();
+    //list의 사이즈 담는 변수
+    var listLength = $('.gnb>ul>li').length;
+    for (var i = 0; i < listLength; i++) {
+      //li>a 의 width를 담는 변수
+      var aWidth = $('.gnb>ul>li>a').eq(i).width();
+      var liWidth = $('.gnb>ul>li').eq(i + 1).width() + 1;
+      //aWidth를 반올림하기위해 +1한 값을 width에
+      $('.gnb>ul>li').eq(i).css({
+        'width': aWidth + 2
+      })
+      $('.subnav').eq(i).css({
+        'width': liWidth
+      })
+      console.log(liWidth = $('.gnb>ul>li').eq(3).width() + 1);
+    }
+    //li 를 mouseenter했을때 subnav가 펼쳐지도록
+
+    $('.gnb>ul>li').mouseenter(function() {
+      $('.subnav-wrapper').stop().slideDown(500);
+    })
+    $('.subnav-wrapper').mouseleave(function() {
+      $('.subnav-wrapper').stop().slideUp(500);
+    })
+    $('.btn-close').click(function() {
+      $('.subnav-wrapper').stop().slideUp(500);
+    })
+
+
+
+
+    //Cabinet 152.992 151.586
+    var firstdlW = $('.subnav-inner > dl:first-child').width();
+    console.log('dlW', firstdlW);
+    if (firstdlW > 152) {
+      $('.subnav').css({
+        'margin-right': 112
+      })
+    } else if (firstdlW < 152) {
+      $('.subnav').css({
+        'margin-right': 114
+      })
+    }
+
+  }
 }
 
 function bestitemslide() {
