@@ -862,56 +862,7 @@ width: 44%;
 
 }
 
-@media screen and (max-width: 480px) {
-  header{
-    display: none;
-  }
-  footer{
-    display: none;
-  }
-   .firstblock{
-   width: 480px;
-   }
-   .firstblock .img30{
-      width: 480px;
-      margin: auto;
-   }
-   .firstblock .img30 div{
-      width: 225px;
-      height: 225px;
-   }
 
-   .firstblock .img30 div:nth-child(3),
-   .firstblock .img30 div:nth-child(6){
-      margin-right: 15px;
-   }
-   .firstblock .img30 .smallIMG img{
-      width: 225px;
-   }
-
-   /* fourthblock-inner */
-
-   .fourthblock-inner {
-    width: 73%;
- }
- .photowrapper ul li {
-     margin-left: 33px;
- }
-   .photowrapper ul li:first-child {
-     background: url(../img/main/div2.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     display: none;
- }
-   .photowrapper ul li:last-child {
-     background: url(../img/main/div2.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     display: none;
- }
-
-}
-/* -------------------  footer end ------------------- */
 
 @media screen and (max-width:768px) {
   body {
@@ -985,8 +936,55 @@ width: 44%;
   a.logo {
     padding-top: 0;
   }
-<<<<<<< HEAD
-=======
+}
+
+@media screen and (max-width: 480px) {
+  header{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+   .firstblock{
+   width: 480px;
+   }
+   .firstblock .img30{
+      width: 480px;
+      margin: auto;
+   }
+   .firstblock .img30 div{
+      width: 225px;
+      height: 225px;
+   }
+
+   .firstblock .img30 div:nth-child(3),
+   .firstblock .img30 div:nth-child(6){
+      margin-right: 15px;
+   }
+   .firstblock .img30 .smallIMG img{
+      width: 225px;
+   }
+
+   /* fourthblock-inner */
+
+   .fourthblock-inner {
+    width: 73%;
+ }
+ .photowrapper ul li {
+     margin-left: 33px;
+ }
+   .photowrapper ul li:first-child {
+     background: url(../img/main/div2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: none;
+ }
+   .photowrapper ul li:last-child {
+     background: url(../img/main/div2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: none;
+ }
 
 }
 
@@ -1016,6 +1014,4 @@ width: 44%;
    footer{
       display: none;
    }
->>>>>>> 24965c1814ef9c79c4abedf9809a69ed11d908ec
-
 }
