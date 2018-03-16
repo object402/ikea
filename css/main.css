@@ -890,8 +890,29 @@ width: 44%;
    .firstblock .img30 .smallIMG img{
       width: 225px;
    }
-=======
 
+   /* fourthblock-inner */
+
+   .fourthblock-inner {
+    width: 73%;
+ }
+ .photowrapper ul li {
+     margin-left: 33px;
+ }
+   .photowrapper ul li:first-child {
+     background: url(../img/main/div2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: none;
+ }
+   .photowrapper ul li:last-child {
+     background: url(../img/main/div2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: none;
+ }
+
+}
 /* -------------------  footer end ------------------- */
 
 @media screen and (max-width:768px) {
@@ -966,6 +987,5 @@ width: 44%;
   a.logo {
     padding-top: 0;
   }
->>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
 
 }
