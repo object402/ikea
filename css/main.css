@@ -277,10 +277,8 @@ section::after {
   float: right;
 <<<<<<< HEAD
 } */
-=======
 }
->>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
->>>>>>> 67fefa8be233492cf4bca7ecfc54e64fecd067bc
+
 
 .secondblock {
   margin-top: 50px;
@@ -747,10 +745,10 @@ footer .footer-right ul li::before {
 
 
 @media screen and (max-width:768px) {
-
+/*
   header,footer{
     display: none;
-  }
+  } */
 
   /* 지영언니 코드 */
 
@@ -867,6 +865,9 @@ width: 44%;
   }
 
 /* photowrapper */
+.photowrapper{
+      margin-bottom: 40px;
+}
 .photowrapper ul{
   width:100%;
       height: 200px
@@ -956,12 +957,12 @@ width: 44%;
 }
 
 @media screen and (max-width: 480px) {
-  header{
+  /* header{
     display: none;
   }
   footer{
     display: none;
-  }
+  } */
    .firstblock{
    width: 480px;
    }
@@ -986,6 +987,9 @@ width: 44%;
 
    .fourthblock-inner {
     width: 72%;
+ }
+ .photowrapper{
+       margin-bottom: 40px;
  }
  .photowrapper ul li {
     margin-left: 38px;
@@ -1037,10 +1041,10 @@ width: 44%;
    .secondblock{
       display: none;
    }
-   header{
+   /* header{
       display: none;
    }
    footer{
       display: none;
-   }
+   } */
 }
