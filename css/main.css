@@ -201,6 +201,7 @@ section::after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 지영 */
 .firstblock{
 
@@ -235,6 +236,8 @@ section::after {
 /* .img30 > div{
    cursor: pointer;
    overflow: hidden;
+=======
+>>>>>>> 67fefa8be233492cf4bca7ecfc54e64fecd067bc
 =======
 .img30>div {
   cursor: pointer;
@@ -275,7 +278,12 @@ section::after {
 .smallIMG:last-child {
   margin-right: 0;
   float: right;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
+>>>>>>> 67fefa8be233492cf4bca7ecfc54e64fecd067bc
 
 .secondblock {
   margin-top: 50px;
