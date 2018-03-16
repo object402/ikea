@@ -774,14 +774,12 @@ footer .footer-right ul li::before {
      width: 330px;
   }
 
-<<<<<<< HEAD
 /* addedblock */
-=======
+
    .secondblock{
       display: none;
    }
 /* 여기서부터 내 코드 */
->>>>>>> 1c95c0cb4c13120dd52b996082fe073163c1b2e3
 .addedblock{
     height: 400px;
 }
@@ -797,7 +795,9 @@ footer .footer-right ul li::before {
   .bottomslide{
     display: none;
   }
-
+  .addedblock{
+        height: 430px;
+  }
   .addedblock-inner{
     width:100%;
     }
@@ -817,16 +817,18 @@ footer .footer-right ul li::before {
   margin-bottom: 50px;
 }
 .m_arrwo{
-  position:absolute;
-  width:20px;
-  height:20px;
   display: block;
+  position: absolute;
+  width: 40px;
+  right: 50px;
+  top: 7px;
+  height: 40px;
 }
-.m_arrwo span{
-
+.m_arrwo img{
   display: block;
-  background: url(../img/main/arrow_white) no-repeat;
-
+  width:40px;
+  height:40px;
+  /* background: url(../img/main/arrow2.png) no-repeat; */
 }
 .m_none{
   display: block;
