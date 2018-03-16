@@ -774,6 +774,9 @@ footer .footer-right ul li::before {
      width: 330px;
   }
 
+   .secondblock{
+      display: none;
+   }
 /* 여기서부터 내 코드 */
 .addedblock{
   display: none;
@@ -1009,6 +1012,9 @@ width: 44%;
    }
    .firstblock .img30 .smallIMG img{
       width: 225px;
+   }
+   .secondblock{
+      display: none;
    }
    header{
       display: none;
