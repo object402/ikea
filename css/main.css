@@ -1038,7 +1038,7 @@ width: 44%;
 }
 
 @media screen and (max-width: 480px) {
-   .firstblock{
+   /* .firstblock{
    width: 480px;
    }
    .firstblock .img30{
@@ -1056,7 +1056,7 @@ width: 44%;
    }
    .firstblock .img30 .smallIMG img{
       width: 225px;
-   }
+   } */
    .secondblock{
       display: none;
    }
