@@ -581,7 +581,7 @@ span.pageOn {
   width: 100%;
   max-width: 1200px;
   /* margin: auto; */
-  /* margin-bottom: 80px; */
+  margin-bottom: 80px;
 }
 
 .fourthblock-inner {
@@ -651,6 +651,10 @@ span.pageOn {
 
 .centertext p:nth-child(4) {
   font-size: 18px;
+}
+
+.m_none{
+  display: none;
 }
 
 /* -------------------  contents end ------------------- */
