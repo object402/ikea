@@ -964,6 +964,34 @@ width: 44%;
   a.logo {
     padding-top: 0;
   }
->>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
+
+}
+
+@media screen and (max-width: 480px) {
+   .firstblock{
+   width: 480px;
+   }
+   .firstblock .img30{
+      width: 480px;
+      margin: auto;
+   }
+   .firstblock .img30 div{
+      width: 225px;
+      height: 225px;
+   }
+
+   .firstblock .img30 div:nth-child(3),
+   .firstblock .img30 div:nth-child(6){
+      margin-right: 15px;
+   }
+   .firstblock .img30 .smallIMG img{
+      width: 225px;
+   }
+   header{
+      display: none;
+   }
+   footer{
+      display: none;
+   }
 
 }
