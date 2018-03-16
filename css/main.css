@@ -199,9 +199,6 @@ section::after {
   height: auto;
   margin-bottom: 50px;
 }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 지영 */
 .firstblock{
 
@@ -328,6 +325,7 @@ section::after {
   width: 1200px;
   height: 320px;
   position: relative;
+  margin: 0 auto;
 }
 
 .itemslide-visual {
@@ -987,5 +985,37 @@ width: 44%;
   a.logo {
     padding-top: 0;
   }
+<<<<<<< HEAD
+=======
+
+}
+
+@media screen and (max-width: 480px) {
+   .firstblock{
+   width: 480px;
+   }
+   .firstblock .img30{
+      width: 480px;
+      margin: auto;
+   }
+   .firstblock .img30 div{
+      width: 225px;
+      height: 225px;
+   }
+
+   .firstblock .img30 div:nth-child(3),
+   .firstblock .img30 div:nth-child(6){
+      margin-right: 15px;
+   }
+   .firstblock .img30 .smallIMG img{
+      width: 225px;
+   }
+   header{
+      display: none;
+   }
+   footer{
+      display: none;
+   }
+>>>>>>> 24965c1814ef9c79c4abedf9809a69ed11d908ec
 
 }
