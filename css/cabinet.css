@@ -224,7 +224,12 @@ option {
       background: url(../img/cabinet/cabinetBanner_768.jpg);
       background-size: cover;
    }
-
+   .j_storageBanner .j_title h2{
+      top: 36%;
+   }
+   .j_storageBanner .j_description{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 480px) {
