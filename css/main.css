@@ -204,28 +204,23 @@ section::after {
 }
 
 /* 지영 */
-
-.firstblock {}
-
-.firstblock .img30 {}
+.firstblock .img30 {
+   overflow: hidden;
+}
 
 .firstblock .img30 div {
    float: left;
    width: 32%;
-   /* width: 390px;
-   height: 390px; */
-   margin: 0 15px 15px 0;
+   margin: 0 2% 2% 0;
    cursor: pointer;
    overflow: hidden;
 }
-
-.firstblock .img30 div:nth-child(3), .firstblock .img30 div:nth-child(6) {
+.firstblock .img30 div:nth-child(3),
+.firstblock .img30 div:nth-child(6) {
    margin-right: 0;
 }
-
 .firstblock .img30 .smallIMG img {
    width: 100%;
-   /* width: 390px; */
 }
 
 .img30>div:hover img {
@@ -233,59 +228,7 @@ section::after {
    transform: scale(1.1);
    transition: all .2s ease-in-out;
 }
-
 /* 지영 */
-
-/* .img30 > div{
-   cursor: pointer;
-   overflow: hidden;
-=======
->>>>>>> 67fefa8be233492cf4bca7ecfc54e64fecd067bc
-=======
-.img30>div {
-  cursor: pointer;
-  overflow: hidden;
->>>>>>> 6197aca9d6cace6c5fccdabd9ceebf6f22537f45
-}
-
-.img30>div>img {
-  width: 390px;
-}
-
-.img30>div:hover img {
-  opacity: 0.8;
-  transform: scale(1.1);
-  transition: all .2s ease-in-out;
-}
-
-.bigIMG {
-  width: 592px;
-  display: block;
-  float: right;
-}
-
-.bigIMG:first-child {
-  margin-right: 15px;
-  float: left;
-}
-
-.smallIMG {
-  width: 390px;
-  height: 390px;
-  display: block;
-  float: left;
-  margin-right: 15px;
-  margin-top: 15px;
-}
-
-.smallIMG:last-child {
-  margin-right: 0;
-  float: right;
-<<<<<<< HEAD
-} */
-
-}
-
 .secondblock {
    margin-top: 50px;
    width: 1200px;
@@ -751,26 +694,16 @@ footer .footer-right ul li::before {
 
 @media screen and (max-width:768px) {
    /* 지영언니 코드 */
-   .firstblock{
-  /* width: 768px; */
-  }
-  .firstblock .img30{
-     /* width: 690px; */
-     /* margin: auto; */
-  }
   .firstblock .img30 div{
-     /* width: 46%; */
-     /* width: 225px;
-    height: 225px; */
+     width: 49%;
   }
-
-  .firstblock .img30 div:nth-child(3),
-  .firstblock .img30 div:nth-child(6){
-     /* margin-right: 15px; */
+   .firstblock .img30 div:nth-child(2),
+   .firstblock .img30 div:nth-child(4){
+     margin-right: 0;
   }
-  .firstblock .img30 .smallIMG img{
-     /* width: 330px; */
-  }
+  .firstblock .img30 div:nth-child(3){
+     margin-right: 2%;
+ }
 
    /* 여기서부터 소영 코드 */
    /* addedblock */
@@ -944,31 +877,6 @@ footer .footer-right ul li::before {
 /* 진수 768 */
 
 @media screen and (max-width: 480px) {
-   /* 지영 */
-   .firstblock{
-   /* max-width: 480px;
-   width: 100%; */
-   }
-   .firstblock .img30{
-      /* width: 480px;
-      margin: auto; */
-   }
-   .firstblock .img30 div {
-      /* width: 47%; */
-      /* width: 225px;
-      height: 225px; */
-   }
-   .firstblock .img30 div:nth-child(3), .firstblock .img30 div:nth-child(6) {
-      /* margin-right: 15px; */
-   }
-
-   .firstblock .img30 .smallIMG img{
-      /* width: 225px; */
-   }
-   .secondblock {
-      display: none;
-   }
-   /* 지영 */
    /* 소영 */
    /* fourthblock-inner */
    .fourthblock-inner {
