@@ -196,6 +196,7 @@ section::after {
 
 .firstblock {
    max-width: 1200px;
+   min-width: 320px;
    width: 100%;
    margin: auto;
    margin-top: 50px;
@@ -877,6 +878,11 @@ footer .footer-right ul li::before {
 /* 진수 768 */
 
 @media screen and (max-width: 480px) {
+   /* 지영 */
+   .firstblock{
+      margin-top: 0;  
+   }
+   /* 지영 */
    /* 소영 */
    /* fourthblock-inner */
    .fourthblock-inner {
