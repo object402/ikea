@@ -925,7 +925,7 @@ footer .footer-right ul li::before {
       display: none;
       /* background: url(../img/main/arrow2.png) no-repeat; */
    }
-   /* 소영 */
+   /* 소영  end */
    .fourthblock-inner ul li:last-child{
       margin: 2% auto;
    }
@@ -957,8 +957,5 @@ footer .footer-right ul li::before {
       display: none;
    }
    /* 지영 */
-
-
-
 
 }
