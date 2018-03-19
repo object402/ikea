@@ -178,7 +178,8 @@ dl.lineH>dd {
 /* -------------------  header end ------------------- */
 
 .contents {
-   width: 100%;
+   width: 1200px;
+   margin: 0 auto;
    overflow: hidden;
 }
 
@@ -705,7 +706,10 @@ footer .footer-right ul li::before {
 /* 지영언니 미디어쿼리 */
 
 @media screen and (max-width:768px) {
-
+.contents{
+   max-width: 768px;
+   width: 100%;
+}
 /* 진수 코드  */
   body {
      transition: .5s;
