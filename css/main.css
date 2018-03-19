@@ -452,15 +452,17 @@ span.pageOn {
 }
 
 .imgblock {
-   width: 1060px;
-   height: 440px;
+  width: 100%;
+  max-width: 1060px;
+height: 440px;
    margin: auto;
 }
 
 .imgblock ul li {
    float: left;
-   width: 340px;
-   margin-right: 20px;
+   width:100%;
+   max-width: 340px;
+   margin-right: 4%;
    cursor: pointer;
 }
 
@@ -718,21 +720,27 @@ footer .footer-right ul li::before {
    .secondblock {
       display: none;
    }
-   .addedblock {
-      height: 400px;
+
+   .imgblock{
+     width:100%;
+     height: 100%;
    }
    .imgblock ul li {
-      width: 238px;
+      width: 30%;
+
+
    }
    .imgblock ul li img {
-      width: 250px;
+      width: 105%;
    }
    /* 일단 display none */
    .bottomslide {
       display: none;
    }
+
+   /* addblock */
    .addedblock {
-      height: 430px;
+      height: 100%;
    }
    .addedblock-inner {
       width: 100%;
@@ -746,7 +754,7 @@ footer .footer-right ul li::before {
    /* 3 */
    .thirdblock {
       height: 55px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
    }
    .m_arrwo {
       display: block;
@@ -918,13 +926,16 @@ footer .footer-right ul li::before {
    }
    /* 이달의 쇼핑 */
    .addedblock {
-      height: 290px;
+      height: 100%;
+   }
+   .imgblock{
+     width:100%;
    }
    .imgblock ul li {
-      width: 143px;
+      width: 30%;
    }
    .imgblock ul li img {
-      width: 154px;
+      width: 105%;
    }
    /* 소영 */
 }
