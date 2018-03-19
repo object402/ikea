@@ -178,7 +178,8 @@ dl.lineH>dd {
 /* -------------------  header end ------------------- */
 
 .contents {
-   width: 1200px;
+   min-width: 1200px;
+   width: 100%;
    margin: 0 auto;
    overflow: hidden;
 }
