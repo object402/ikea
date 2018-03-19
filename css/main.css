@@ -209,8 +209,8 @@ section::after {
 
 =======
 /* 지영 시작*/
->>>>>>> 84a73bb8b937e3ce12b9bafdec9c416c3af40f84
-.firstblock .img30 {
+
+>>>>>>>84a73bb8b937e3ce12b9bafdec9c416c3af40f84 .firstblock .img30 {
   overflow: hidden;
 }
 
@@ -235,14 +235,14 @@ section::after {
   transform: scale(1.1);
   transition: all .2s ease-in-out;
 }
-<<<<<<< HEAD
 
+<<<<<<< HEAD
 /* 지영 */
+
 =======
 /* 지영 끝*/
->>>>>>> 84a73bb8b937e3ce12b9bafdec9c416c3af40f84
 
-.secondblock {
+>>>>>>>84a73bb8b937e3ce12b9bafdec9c416c3af40f84 .secondblock {
   margin-top: 50px;
   width: 1200px;
   height: 340px;
@@ -708,25 +708,250 @@ footer .footer-right ul li::before {
   margin: auto;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD .m_none {
+<<<<<<< HEAD <<<<<<< HEAD .m_none {
   display: none;
-=======
-.m_none {
-   display: none;
->>>>>>> 84a73bb8b937e3ce12b9bafdec9c416c3af40f84
+  =======.m_none {
+    display: none;
+    >>>>>>>84a73bb8b937e3ce12b9bafdec9c416c3af40f84
+  }
+  .m_arrwo {
+    display: none;
+  }
+  /* -------------------  footer end ------------------- */
+  /* 지영언니 미디어쿼리 */
+  @media screen and (max-width:768px) {
+    /* 진수 코드  */
+    body {
+      transition: .5s;
+    }
+    .subnav-wrapper {
+      display: none;
+    }
+    .gnb {
+      display: none;
+    }
+    header {
+      height: 90px;
+      position: relative;
+    }
+    header h1 {
+      display: block;
+      width: 200px;
+      height: 90px;
+      margin: auto;
+    }
+    a.mnb_btn {
+      width: 60px;
+      height: 60px;
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      left: 10px;
+      top: 15px;
+      background-image: url('../img/main/hamburger.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    a.mnb_btn>span {
+      display: block;
+      width: inherit;
+      height: inherit;
+    }
+    .hamburger {
+      width: 60px;
+      height: 60px;
+    }
+    .mnb {
+      display: none;
+      margin: 0;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      left: -300px;
+      background: rgb(172, 172, 172);
+      transition: .5s;
+    }
+    .menuOn {
+      left: -300px;
+      display: block;
+      transition: .5s;
+    }
+    .menuOn2 {
+      margin-left: 300px;
+      transition: .5s;
+    }
+    .mnb ul li {
+      float: none;
+      margin: 0;
+    }
+    .mnb ul li:last-child {
+      float: none;
+      margin: auto;
+    }
+    a.logo {
+      padding-top: 0;
+    }
+    /* 진수 코드 끝 */
+    /* 지영언니 코드 */
+    .firstblock {
+      margin-bottom: -20px;
+    }
+    .firstblock .img30 div {
+      width: 49%;
+    }
+    .firstblock .img30 div:nth-child(2), .firstblock .img30 div:nth-child(4) {
+      margin-right: 0;
+    }
+    .firstblock .img30 div:nth-child(3) {
+      margin-right: 2%;
+    }
+    /* 여기서부터 소영 코드 */
+    /* display block */
+    .secondblock {
+      display: none;
+    }
+    .bottomslide {
+      display: none;
+    }
+    .main-contorler2 {
+      display: none;
+    }
+    .longbanner-inner>img {
+      display: none;
+    }
+    /* imgblock */
+    .imgblock {
+      width: 100%;
+      height: 100%;
+    }
+    .imgblock ul li {
+      width: 30%;
+    }
+    .imgblock ul li img {
+      width: 105%;
+    }
+    /* addblock */
+    .addedblock {
+      height: 100%;
+    }
+    .addedblock-inner {
+      width: 100%;
+    }
+    .addedblock-inner h2 {
+      padding: 60px 0 25px 0;
+    }
+    /* thirdblock */
+    .thirdblock {
+      height: 55px;
+      margin-bottom: 30px;
+    }
+    .m_arrwo {
+      display: block;
+      position: absolute;
+      width: 40px;
+      right: 50px;
+      top: 7px;
+      height: 40px;
+    }
+    /* arrow img */
+    .m_arrwo img {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+    .m_none {
+      display: block;
+      color: #fff;
+      font-size: 12px;
+      line-height: 14px;
+      padding-top: 15px;
+      margin-left: 120px;
+    }
+    .longbanner-visual {
+      width: 100%;
+      margin: 0 15px 15px !important;
+      height: 55px;
+      background: #FB6A2E;
+      background-image: url(https://uiux.newideas.kr/images/ikea-family-logo.svg);
+      background-position: left 30px top 12px;
+      background-repeat: no-repeat;
+      background-size: auto 30px;
+    }
+    /* 4 지영 수정 */
+    .fourthblock {
+      margin-bottom: 30px;
+    }
+    /* photowrapper */
+    .photowrapper ul {
+      height: 240px;
+    }
+  }
+  .main-contorler2 {
+    display: none;
+  }
+  .longbanner-inner>img {
+    display: none;
+  }
+  /* 3 */
+  .thirdblock {
+    height: 55px;
+    margin-bottom: 30px;
+  }
+  .m_arrwo {
+    display: block;
+    position: absolute;
+    width: 40px;
+    right: 50px;
+    top: 7px;
+    height: 40px;
+  }
+  .m_arrwo img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    /* background: url(../img/main/arrow2.png) no-repeat; */
+  }
+  .m_none {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 15px;
+    margin-left: 120px;
+  }
+  .longbanner-visual {
+    width: 100%;
+    margin: 0 15px 15px !important;
+    height: 55px;
+    background: #FB6A2E;
+    background-image: url(https://uiux.newideas.kr/images/ikea-family-logo.svg);
+    background-position: left 30px top 12px;
+    background-repeat: no-repeat;
+    background-size: auto 30px;
+  }
+  /* 4 지영 수정 */
+  .fourthblock {
+    margin-bottom: 30px;
+  }
+  /* photowrapper */
+  .photowrapper {
+    /* margin-bottom: 40px; */
+  }
+  .photowrapper ul {
+    /* width: 100%; */
+    height: 240px;
+  }
+  .photowrapper ul li {
+    /* width: 184px;
+      height: 200px;
+      float: left; */
+  }
 }
 
-.m_arrwo {
-  display: none;
-}
-
-/* -------------------  footer end ------------------- */
-
-/* 지영언니 미디어쿼리 */
+/* 진수 768 */
 
 @media screen and (max-width:768px) {
-  /* 진수 코드  */
   body {
     transition: .5s;
   }
@@ -798,248 +1023,13 @@ footer .footer-right ul li::before {
   a.logo {
     padding-top: 0;
   }
-  /* 진수 코드 끝 */
-  /* 지영언니 코드 */
-  .firstblock {
-    margin-bottom: -20px;
-  }
-  .firstblock .img30 div {
-    width: 49%;
-  }
-  .firstblock .img30 div:nth-child(2), .firstblock .img30 div:nth-child(4) {
-    margin-right: 0;
-  }
-  .firstblock .img30 div:nth-child(3) {
-    margin-right: 2%;
-  }
-  /* 여기서부터 소영 코드 */
-  /* display block */
-  .secondblock {
-    display: none;
-  }
-  .bottomslide {
-    display: none;
-  }
-  .main-contorler2 {
-    display: none;
-  }
-  .longbanner-inner>img {
-    display: none;
-  }
-  /* imgblock */
-  .imgblock {
-    width: 100%;
-    height: 100%;
-  }
-  .imgblock ul li {
-    width: 30%;
-  }
-  .imgblock ul li img {
-    width: 105%;
-  }
-  /* addblock */
-  .addedblock {
-    height: 100%;
-  }
-  .addedblock-inner {
-    width: 100%;
-  }
-  .addedblock-inner h2 {
-    padding: 60px 0 25px 0;
-  }
-  /* thirdblock */
-  .thirdblock {
-    height: 55px;
-    margin-bottom: 30px;
-  }
-  .m_arrwo {
-    display: block;
-    position: absolute;
-    width: 40px;
-    right: 50px;
-    top: 7px;
-    height: 40px;
-  }
-  /* arrow img */
-  .m_arrwo img {
-    display: block;
-    width: 40px;
-    height: 40px;
-  }
-  .m_none {
-    display: block;
-    color: #fff;
-    font-size: 12px;
-    line-height: 14px;
-    padding-top: 15px;
-    margin-left: 120px;
-  }
-  .longbanner-visual {
-    width: 100%;
-    margin: 0 15px 15px !important;
-    height: 55px;
-    background: #FB6A2E;
-    background-image: url(https://uiux.newideas.kr/images/ikea-family-logo.svg);
-    background-position: left 30px top 12px;
-    background-repeat: no-repeat;
-    background-size: auto 30px;
-  }
-  /* 4 지영 수정 */
-  .fourthblock {
-    margin-bottom: 30px;
-  }
-  /* photowrapper */
-  .photowrapper ul {
-    height: 240px;
-  }
-}
-<<<<<<< HEAD
-=======
-   .main-contorler2 {
-      display: none;
-   }
-   .longbanner-inner>img {
-      display: none;
-   }
-   /* 3 */
-   .thirdblock {
-      height: 55px;
-      margin-bottom: 30px;
-   }
-   .m_arrwo {
-      display: block;
-      position: absolute;
-      width: 40px;
-      right: 50px;
-      top: 7px;
-      height: 40px;
-   }
-   .m_arrwo img {
-      display: block;
-      width: 40px;
-      height: 40px;
-      /* background: url(../img/main/arrow2.png) no-repeat; */
-   }
-   .m_none {
-      display: block;
-      color: #fff;
-      font-size: 12px;
-      line-height: 14px;
-      padding-top: 15px;
-      margin-left: 120px;
-   }
-   .longbanner-visual {
-      width: 100%;
-      margin: 0 15px 15px !important;
-      height: 55px;
-      background: #FB6A2E;
-      background-image: url(https://uiux.newideas.kr/images/ikea-family-logo.svg);
-      background-position: left 30px top 12px;
-      background-repeat: no-repeat;
-      background-size: auto 30px;
-   }
-   /* 4 지영 수정 */
-   .fourthblock{
-      margin-bottom: 30px;
-   }
-
-   /* photowrapper */
-   .photowrapper {
-      /* margin-bottom: 40px; */
-   }
-   .photowrapper ul {
-      /* width: 100%; */
-      height: 240px;
-   }
-   .photowrapper ul li {
-      /* width: 184px;
-      height: 200px;
-      float: left; */
-   }
 }
 
 /* 진수 768 */
-
-@media screen and (max-width:768px) {
-   body {
-      transition: .5s;
-   }
-   .subnav-wrapper {
-      display: none;
-   }
-   .gnb {
-      display: none;
-   }
-   header {
-      height: 90px;
-      position: relative;
-   }
-   header h1 {
-      display: block;
-      width: 200px;
-      height: 90px;
-      margin: auto;
-   }
-   a.mnb_btn {
-      width: 60px;
-      height: 60px;
-      display: block;
-      position: absolute;
-      z-index: 9999;
-      left: 10px;
-      top: 15px;
-      background-image: url('../img/main/hamburger.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-   }
-   a.mnb_btn>span {
-      display: block;
-      width: inherit;
-      height: inherit;
-   }
-   .hamburger {
-      width: 60px;
-      height: 60px;
-   }
-   .mnb {
-      display: none;
-      margin: 0;
-      width: 300px;
-      position: absolute;
-      top: 0;
-      left: -300px;
-      background: rgb(172, 172, 172);
-      transition: .5s;
-   }
-   .menuOn {
-      left: -300px;
-      display: block;
-      transition: .5s;
-   }
-   .menuOn2 {
-      margin-left: 300px;
-      transition: .5s;
-   }
-   .mnb ul li {
-      float: none;
-      margin: 0;
-   }
-   .mnb ul li:last-child {
-      float: none;
-      margin: auto;
-   }
-   a.logo {
-      padding-top: 0;
-   }
-}
-/* 진수 768 */
->>>>>>> 84a73bb8b937e3ce12b9bafdec9c416c3af40f84
 
 /* media 480px start */
 
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
   /* 지영 */
   .firstblock {
     margin-top: 0;
@@ -1092,61 +1082,56 @@ footer .footer-right ul li::before {
     display: none;
   }
   /* 지영 끝 */
-=======
-   /* 지영 */
-   .firstblock{
-      margin-top: 0;
-   }
-   .fourthblock-inner ul li:last-child{
-      margin: 2% auto;
-   }
-   .fourthblock-inner ul li{
-      float: unset;
-      width: 72%;
-      margin: 2% auto;
-   }
-   .centertext{
-      width: 100% !important;
-      padding: 32px 0;
-      line-height: 30px;
-   }
-   .centertext p{
-      font-size: 28px;
-   }
-   .centertext p:nth-child(3){
-      font-size: 22px;
-   }
-   .centertext p:nth-child(4){
-      font-size: 18px;
-   }
-
-   .photowrapper ul li:first-child {
-      display: none;
-   }
-   .photowrapper ul li:last-child {
-      display: none;
-   }
-   /* 지영 */
-
-   /* 소영*/
-   /* 이달의 쇼핑 */
-   .addedblock {
-      height: 100%;
-   }
-   .imgblock{
-     width:100%;
-   }
-   .imgblock ul li {
-      width: 30%;
-   }
-   .imgblock ul li img {
-      width: 105%;
-   }
-   /* 소영 */
-
-   .m_arrwo img {
-      display: none;
-      /* background: url(../img/main/arrow2.png) no-repeat; */
-   }
->>>>>>> 84a73bb8b937e3ce12b9bafdec9c416c3af40f84
+  /* 지영 */
+  .firstblock {
+    margin-top: 0;
+  }
+  .fourthblock-inner ul li:last-child {
+    margin: 2% auto;
+  }
+  .fourthblock-inner ul li {
+    float: unset;
+    width: 72%;
+    margin: 2% auto;
+  }
+  .centertext {
+    width: 100% !important;
+    padding: 32px 0;
+    line-height: 30px;
+  }
+  .centertext p {
+    font-size: 28px;
+  }
+  .centertext p:nth-child(3) {
+    font-size: 22px;
+  }
+  .centertext p:nth-child(4) {
+    font-size: 18px;
+  }
+  .photowrapper ul li:first-child {
+    display: none;
+  }
+  .photowrapper ul li:last-child {
+    display: none;
+  }
+  /* 지영 */
+  /* 소영*/
+  /* 이달의 쇼핑 */
+  .addedblock {
+    height: 100%;
+  }
+  .imgblock {
+    width: 100%;
+  }
+  .imgblock ul li {
+    width: 30%;
+  }
+  .imgblock ul li img {
+    width: 105%;
+  }
+  /* 소영 */
+  .m_arrwo img {
+    display: none;
+    /* background: url(../img/main/arrow2.png) no-repeat; */
+  }
 }
