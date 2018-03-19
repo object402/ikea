@@ -195,9 +195,9 @@ section::after {
 }
 
 .firstblock {
-   max-width: 1200px;
-   min-width: 320px;
-   width: 100%;
+   /* max-width: 1200px;
+   min-width: 320px; */
+   width: 1200px;
    margin: auto;
    margin-top: 50px;
    height: auto;
@@ -534,8 +534,8 @@ height: 440px;
 }
 
 .fourthblock-inner {
-   max-width: 1060px;
-   width: 100%;
+   /* max-width: 1060px; */
+   width: 1060px;
    margin: auto;
    overflow: hidden;
 }
@@ -561,8 +561,7 @@ height: 440px;
 }
 
 .photowrapper {
-   max-width: 1200px;
-   width: 100%;
+   width: 1200px;
    margin: auto;
 }
 
@@ -783,6 +782,9 @@ footer .footer-right ul li::before {
 
    /* 지영언니 코드 */
      .firstblock{
+        max-width: 768px;
+        min-width: 320px;
+        width: 100%;
        margin-bottom: -20px;
      }
   .firstblock .img30 div{
@@ -879,8 +881,16 @@ footer .footer-right ul li::before {
    .fourthblock{
       margin-bottom: 30px;
    }
-
+   .fourthblock-inner{
+      max-width: 1060px;
+      width: 100%;
+   }
    /* photowrapper */
+
+   .photowrapper{
+      max-width: 768px;
+      width: 100%;
+   }
 
    .photowrapper ul {
       height: 240px;

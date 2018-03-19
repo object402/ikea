@@ -205,7 +205,10 @@ function li_width() {
    var window_width = $(window).outerWidth();
    var ul_width = $('.photowrapper ul').width();
    var list_item = $('.photowrapper ul li:nth-child(odd)');
-   if(window_width < 1200 && window_width > 480){
+   if(window_width > 768){
+         var li_widthForTwo = (ul_width - 401)/2;
+         list_item.css({'width':400});
+   }else if(window_width <= 768 && window_width > 480){
          var li_widthForTwo = (ul_width - 401)/2;
          list_item.css({'width': li_widthForTwo});
    }
