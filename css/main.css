@@ -452,15 +452,18 @@ span.pageOn {
 }
 
 .imgblock {
-   width: 1060px;
-   height: 440px;
+  width: 100%;
+  max-width: 1060px;
+height: 440px;
    margin: auto;
 }
 
 .imgblock ul li {
    float: left;
-   width: 340px;
-   margin-right: 20px;
+   width:100%;
+   max-width: 317px;
+   /* min-width:320px; */
+   margin-right: 4%;
    cursor: pointer;
 }
 
@@ -704,6 +707,9 @@ footer .footer-right ul li::before {
 
 @media screen and (max-width:768px) {
    /* 지영언니 코드 */
+     .firstblock{
+       margin-bottom: -20px;
+     }
   .firstblock .img30 div{
      width: 49%;
   }
@@ -720,25 +726,34 @@ footer .footer-right ul li::before {
    .secondblock {
       display: none;
    }
-   .addedblock {
-      height: 400px;
+
+   .imgblock{
+     width:100%;
+     height: 100%;
    }
    .imgblock ul li {
-      width: 238px;
+      width: 30%;
+
+
    }
    .imgblock ul li img {
-      width: 250px;
+      width: 105%;
    }
    /* 일단 display none */
    .bottomslide {
       display: none;
    }
+
+   /* addblock */
    .addedblock {
-      height: 430px;
+      height: 100%;
    }
    .addedblock-inner {
       width: 100%;
    }
+   .addedblock-inner h2 {
+    padding: 60px 0 25px 0;
+}
    .main-contorler2 {
       display: none;
    }
@@ -748,7 +763,7 @@ footer .footer-right ul li::before {
    /* 3 */
    .thirdblock {
       height: 55px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
    }
    .m_arrwo {
       display: block;
@@ -939,13 +954,21 @@ footer .footer-right ul li::before {
    /* 소영*/
    /* 이달의 쇼핑 */
    .addedblock {
-      height: 290px;
+      height: 100%;
+   }
+   .imgblock{
+     width:100%;
    }
    .imgblock ul li {
-      width: 143px;
+      width: 30%;
    }
    .imgblock ul li img {
-      width: 154px;
+      width: 105%;
    }
    /* 소영 */
+
+   .m_arrwo img {
+      display: none;
+      /* background: url(../img/main/arrow2.png) no-repeat; */
+   }
 }
