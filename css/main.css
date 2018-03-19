@@ -530,14 +530,18 @@ span.pageOn {
 }
 
 .fourthblock-inner {
-   width: 1060px;
+   max-width: 1060px;
+   width: 100%;
    margin: auto;
+   overflow: hidden;
 }
-
+.fourthblock-inner ul{
+   overflow: hidden;
+}
 .fourthblock-inner ul li {
    float: left;
-   width: 340px;
-   margin-right: 20px;
+   width: 32%;
+   margin-right: 2%;
    cursor: pointer;
 }
 
@@ -545,6 +549,9 @@ span.pageOn {
    margin-right: 0px;
 }
 
+.fourthblock-inner ul li a img{
+   width: 100%;
+}
 .lastblock {
    width: 100%;
 }
@@ -773,18 +780,16 @@ footer .footer-right ul li::before {
       background-repeat: no-repeat;
       background-size: auto 30px;
    }
-   /* 4 */
+   /* 4 지영 수정 */
    .fourthblock-inner {
-      width: 44%;
    }
    .fourthblock-inner ul {}
    .fourthblock-inner ul li {
-      margin-bottom: 10px;
    }
    .fourthblock {
-      i width: 100%;
-      margin-bottom: 40px;
    }
+
+
    /* photowrapper */
    .photowrapper {
       margin-bottom: 40px;
@@ -880,14 +885,19 @@ footer .footer-right ul li::before {
 @media screen and (max-width: 480px) {
    /* 지영 */
    .firstblock{
-      margin-top: 0;  
+      margin-top: 0;
+   }
+   .fourthblock-inner ul li:last-child{
+      margin: 2% auto;
+   }
+   .fourthblock-inner ul li{
+      float: unset;
+      width: 72%;
+      margin: 2% auto;
    }
    /* 지영 */
-   /* 소영 */
-   /* fourthblock-inner */
-   .fourthblock-inner {
-      width: 72%;
-   }
+
+   /* 소영*/
    .photowrapper {
       margin-bottom: 40px;
    }
