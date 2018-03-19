@@ -941,4 +941,9 @@ footer .footer-right ul li::before {
       width: 105%;
    }
    /* 소영 */
+
+   .m_arrwo img {
+      display: none;
+      /* background: url(../img/main/arrow2.png) no-repeat; */
+   }
 }
