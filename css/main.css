@@ -462,6 +462,7 @@ height: 440px;
    float: left;
    width:100%;
    max-width: 317px;
+   /* min-width:320px; */
    margin-right: 4%;
    cursor: pointer;
 }
