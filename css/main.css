@@ -789,6 +789,9 @@ footer .footer-right ul li::before {
       background-size: auto 30px;
    }
    /* 4 지영 수정 */
+   .fourthblock{
+      margin-bottom: 30px;
+   }
    .fourthblock-inner {
    }
    .fourthblock-inner ul {}
