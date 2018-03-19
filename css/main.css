@@ -525,6 +525,7 @@ span.pageOn {
 .fourthblock {
    width: 100%;
    max-width: 1200px;
+   min-width: 320px;
    margin: auto;
    margin-bottom: 80px;
 }
@@ -557,12 +558,14 @@ span.pageOn {
 }
 
 .photowrapper {
-   width: 1200px;
+   max-width: 1200px;
+   width: 100%;
    margin: auto;
 }
 
 .photowrapper ul {
-   width: 1200px;
+   max-width: 1200px;
+   width: 100%;
    height: 300px;
 }
 
@@ -579,7 +582,7 @@ span.pageOn {
 }
 
 .photowrapper ul li {
-   width: 400px;
+   width: 33.3%;
    height: 200px;
    float: left;
 }
@@ -591,7 +594,6 @@ span.pageOn {
    text-align: center;
    font-family: impact;
    font-size: 30px;
-   /* font-weight: bold; */
    padding: 20px 0;
    line-height: 39px;
    letter-spacing: 2px;
@@ -795,16 +797,16 @@ footer .footer-right ul li::before {
 
    /* photowrapper */
    .photowrapper {
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
    }
    .photowrapper ul {
-      width: 100%;
-      height: 200px
+      /* width: 100%; */
+      height: 240px;
    }
    .photowrapper ul li {
-      width: 184px;
+      /* width: 184px;
       height: 200px;
-      float: left;
+      float: left; */
    }
 }
 
@@ -885,6 +887,7 @@ footer .footer-right ul li::before {
 }
 /* 진수 768 */
 
+
 @media screen and (max-width: 480px) {
    /* 지영 */
    .firstblock{
@@ -898,27 +901,42 @@ footer .footer-right ul li::before {
       width: 72%;
       margin: 2% auto;
    }
-   /* 지영 */
-
-   /* 소영*/
    .photowrapper {
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
    }
+   .centertext{
+      width: 100% !important;
+      padding: 32px 0;
+      line-height: 30px;
+   }
+   .centertext p{
+      font-size: 28px;
+   }
+   .centertext p:nth-child(3){
+      font-size: 22px;
+   }
+   .centertext p:nth-child(4){
+      font-size: 18px;
+   }
+
    .photowrapper ul li {
-      margin-left: 38px;
+      /* margin-left: 38px; */
    }
    .photowrapper ul li:first-child {
-      background: url(../img/main/div2.jpg);
+      /* background: url(../img/main/div2.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; */
       display: none;
    }
    .photowrapper ul li:last-child {
-      background: url(../img/main/div2.jpg);
+      /* background: url(../img/main/div2.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; */
       display: none;
    }
+   /* 지영 */
+
+   /* 소영*/
    /* 이달의 쇼핑 */
    .addedblock {
       height: 290px;

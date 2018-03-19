@@ -4,10 +4,12 @@ $(document).ready(function() {
   thirdblock();
   addedblock()
   mnb();
+  li_width();
 })
 
 $(window).resize(function() {
   hiddenNav();
+  li_width();
 })
 
 function mnb() {
@@ -197,4 +199,14 @@ function addedblock() {
     return false;
   })
 
+}
+
+function li_width() {
+   var window_width = $(window).outerWidth();
+   var ul_width = $('.photowrapper ul').width();
+   var list_item = $('.photowrapper ul li:nth-child(odd)');
+   if(window_width < 1200 && window_width > 480){
+         var li_widthForTwo = (ul_width - 401)/2;
+         list_item.css({'width': li_widthForTwo});
+   }
 }
