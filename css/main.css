@@ -27,6 +27,12 @@ header .logo {
 header .logo img {
    width: inherit;
 }
+/* header{
+  display: none;
+}
+footer{
+  display: none;
+} */
 
 nav {
    width: 1200px;
