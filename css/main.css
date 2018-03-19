@@ -704,6 +704,9 @@ footer .footer-right ul li::before {
 
 @media screen and (max-width:768px) {
    /* 지영언니 코드 */
+     .firstblock{
+       margin-bottom: -20px;
+     }
   .firstblock .img30 div{
      width: 49%;
   }
@@ -745,6 +748,9 @@ footer .footer-right ul li::before {
    .addedblock-inner {
       width: 100%;
    }
+   .addedblock-inner h2 {
+    padding: 60px 0 25px 0;
+}
    .main-contorler2 {
       display: none;
    }
