@@ -713,6 +713,7 @@ footer .footer-right ul li::before {
 /* 지영언니 미디어쿼리 */
 
 @media screen and (max-width:768px) {
+
 .contents{
    min-width: 320px;
    max-width: 768px;
