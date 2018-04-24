@@ -212,7 +212,6 @@ section::after {
    margin-bottom: 50px;
 }
 
-/* 지영 */
 .firstblock .img30 {
    overflow: hidden;
 }
@@ -710,7 +709,6 @@ footer .footer-right ul li::before {
 
 /* -------------------  footer end ------------------- */
 
-/* 지영언니 미디어쿼리 */
 
 @media screen and (max-width:768px) {
 
@@ -719,7 +717,6 @@ footer .footer-right ul li::before {
    max-width: 768px;
    width: 100%;
 }
-/* 진수 코드  */
   body {
      transition: .5s;
   }
@@ -791,9 +788,7 @@ footer .footer-right ul li::before {
   a.logo {
      padding-top: 0;
   }
-/* 진수 코드 끝 */
 
-   /* 지영언니 코드 */
      .firstblock{
         max-width: 768px;
         min-width: 320px;
@@ -811,7 +806,6 @@ footer .footer-right ul li::before {
      margin-right: 2%;
  }
 
-   /* 여기서부터 소영 코드 */
 
 /* display block */
    .secondblock {
@@ -890,7 +884,6 @@ footer .footer-right ul li::before {
       background-size: auto 30px;
    }
 
-   /* 4 지영 수정 */
    .fourthblock{
       margin-bottom: 30px;
    }
@@ -914,11 +907,9 @@ footer .footer-right ul li::before {
 /* media 480px start */
 
 @media screen and (max-width: 480px) {
-  /* 지영 */
    .firstblock{
       margin-top: 0;
    }
-   /* 소영*/
 
    /* 이달의 쇼핑 */
    .addedblock {
@@ -938,7 +929,6 @@ footer .footer-right ul li::before {
       display: none;
       /* background: url(../img/main/arrow2.png) no-repeat; */
    }
-   /* 소영  end */
    .fourthblock-inner ul li:last-child{
       margin: 2% auto;
    }
@@ -969,6 +959,5 @@ footer .footer-right ul li::before {
    .photowrapper ul li:last-child {
       display: none;
    }
-   /* 지영 */
 
 }
