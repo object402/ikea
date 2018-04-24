@@ -13,28 +13,29 @@ $(window).resize(function() {
 })
 
 function mnb() {
-  var bodyH = $('body').height();
+  var bodyH = $('body').innerHeight();
   $('.mnb').css({
     'height': bodyH
   });
   console.log('전체높이:', bodyH);
 
   $('.mnb_btn').click(function() {
+
     $('.mnb').toggleClass('menuOn');
     $('body').toggleClass('menuOn2');
 
-    if($('body').hasClass('menuOn2')){
+
+    if ($('body').hasClass('menuOn2')) {
       $('.mnb_btn').css({
-        'background-image':'url(../ikea/img/main/X.png)'
+        'background-image': 'url(../ikea/img/main/X.png)'
       })
+
     } else {
       $('.mnb_btn').css({
-        'background-image':'url(../ikea/img/main/hamburger.png)'
+        'background-image': 'url(../ikea/img/main/hamburger.png)'
       })
     }
-
   })
-
 }
 
 function hiddenNav() {
@@ -86,8 +87,11 @@ function hiddenNav() {
       })
     }
 
+  } else {
+
   }
 }
+
 
 function bestitemslide() {
   $('.slidenav > ul > li').click(function() {
@@ -202,13 +206,17 @@ function addedblock() {
 }
 
 function li_width() {
-   var window_width = $(window).outerWidth();
-   var ul_width = $('.photowrapper ul').width();
-   var list_item = $('.photowrapper ul li:nth-child(odd)');
-   if(window_width > 768){
-         list_item.css({'width':400});
-   }else if(window_width <= 768 && window_width > 480){
-         var li_widthForTwo = (ul_width - 401)/2;
-         list_item.css({'width': li_widthForTwo});
-   }
+  var window_width = $(window).outerWidth();
+  var ul_width = $('.photowrapper ul').width();
+  var list_item = $('.photowrapper ul li:nth-child(odd)');
+  if (window_width > 768) {
+    list_item.css({
+      'width': 400
+    });
+  } else if (window_width <= 768 && window_width > 480) {
+    var li_widthForTwo = (ul_width - 401) / 2;
+    list_item.css({
+      'width': li_widthForTwo
+    });
+  }
 }

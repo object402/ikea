@@ -765,8 +765,9 @@ footer .footer-right ul li::before {
      position: absolute;
      top: 0;
      left: -300px;
-     background: rgb(172, 172, 172);
+     background: rgb(142, 142, 142);
      transition: .5s;
+     font-size: 26px;
   }
   .menuOn {
      left: -300px;
@@ -777,17 +778,32 @@ footer .footer-right ul li::before {
      margin-left: 300px;
      transition: .5s;
   }
+  .mnb ul {
+    margin-top: 100px;
+  }
   .mnb ul li {
      float: none;
      margin: 0;
+     margin-bottom: 30px;
+     text-align: left;
+     text-indent: 15px;
   }
   .mnb ul li:last-child {
      float: none;
-     margin: auto;
+     margin: 0;
+     margin-bottom: 30px;
+     text-align: left;
   }
   a.logo {
      padding-top: 0;
   }
+<<<<<<< HEAD
+=======
+  .footer-right {
+    display: none;
+  }
+/* 진수 코드 끝 */
+>>>>>>> c90d2b39d45d3df6dcd8fbaca4196584222d97dc
 
      .firstblock{
         max-width: 768px;
